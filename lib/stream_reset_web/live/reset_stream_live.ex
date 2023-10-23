@@ -46,9 +46,9 @@ defmodule StreamResetWeb.ResetStreamLive do
     </.button>
 
     <div class="mt-3" id="users" phx-update="stream">
-        <%= for {dom_id, user} <- @streams.users do %>
-          <.live_component module={StreamResetWeb.ResetStreamLive.User} id={dom_id} user={user}/>
-        <% end %>
+      <%= for {dom_id, user} <- @streams.users do %>
+        <.live_component module={StreamResetWeb.ResetStreamLive.User} id={dom_id} user={user}/>
+      <% end %>
     </div>
     """
   end
